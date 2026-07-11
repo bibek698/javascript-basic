@@ -10,3 +10,9 @@ body{
     border: none;
 
 }
+
+#button2{
+    border-radius: 5px;
+    height: 25px;
+    width: 150px;
+}
