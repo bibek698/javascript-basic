@@ -16,7 +16,16 @@
     >
       Add to Bag
     </button>
-    <button id="wishlist-button">Move to wishlist</button>
+    <button
+      id="wishlist-button"
+      onclick="
+        cartCount = cartCount - 1;
+        document.querySelector('#cart-count').innerText =
+          `Your Bag has ${cartCount} items`;
+      "
+    >
+      Move to wishlist
+    </button>
     <button
       id="sale-item-button"
       class="bag-button"
