@@ -5,11 +5,14 @@
     <link rel="stylesheet" href="myntra bag.css" />
   </head>
   <body>
-    <button id="add-to-bag-button">Add to Bag</button>
+    <button id="add-to-bag-button" class="bag-button">Add to Bag</button>
     <button id="wishlist-button">Move to wishlist</button>
-    <button id="sale-item-button">Add 1+1 sale item</button>
-    <h1>Your Bag has 2 items</h1>
+    <button id="sale-item-button" class="bag-button">Add 1+1 sale item</button>
+    <h1 id="cart-count">Your Bag has 0 items</h1>
 
-    <script></script>
+    <script>
+        let cartCount = 2;
+        document.querySelector('#cart-count').innerText = 'Your Bag has ' + cartCount + ' items';
+    </script>
   </body>
 </html>
