@@ -9,7 +9,7 @@
       id="add-to-bag-button"
       class="bag-button"
       onclick="
-        cartCount = cartCount + 1;
+        cartCount++;
         document.querySelector('#cart-count').innerText =
           `Your Bag has ${cartCount} items`;
       "
@@ -19,7 +19,7 @@
     <button
       id="wishlist-button"
       onclick="
-        cartCount = cartCount - 1;
+        cartCount--;
         document.querySelector('#cart-count').innerText =
           `Your Bag has ${cartCount} items`;
       "
@@ -30,7 +30,7 @@
       id="sale-item-button"
       class="bag-button"
       onclick="
-        cartCount = cartCount + 2;
+        cartCount += 2;
         document.querySelector('#cart-count').innerText =
           ` Your Bag has ${cartCount} items`;
       "
