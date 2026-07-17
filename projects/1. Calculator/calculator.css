@@ -2,11 +2,12 @@
     border: 1px solid black;
     border-radius: 5px;
     width: 200px;
-    height: 360px;
+    
 }
 #display{
     margin: 10px;
     width: 84%;
+    font-size: 25px;
 }
 .button-container{
     display: flex;
