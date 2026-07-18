@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Game</title>
     <style>
-        body{
+        body {
             text-align: center;
         }
     </style>
 </head>
+
 <body>
     <h1>Bat Ball Stump Game</h1>
     <button onclick="
     console.log('your choice is Bat');
     //this will generate random number between 0 and 3
     let randomNumber = Math.random() * 3;
+    let computerChoice;
     if(randomNumber > 0 && randomNumber <= 1){
-        let computerChoice = 'Bat';
-        console.log('computer choice is Bat');
+         computerChoice = 'Bat';
+        // console.log('computer choice is Bat');
     } else if(randomNumber > 1 && randomNumber <= 2){
         computerChoice = 'Ball';
-        console.log('computer choice is Ball');
+        // console.log('computer choice is Ball');
     } else{
         computerChoice = 'Stump';
-        console.log('computer choice is Stump');
+        // console.log('computer choice is Stump');
     }
+    console.log(`computer choice is ${computerChoice}`);
 
     if(computerChoice === 'Ball'){
         console.log('User Won');
@@ -34,6 +38,7 @@
     ">Bat</button>
     <button>Ball</button>
     <button>Stump</button>
-    
+
 </body>
+
 </html>
