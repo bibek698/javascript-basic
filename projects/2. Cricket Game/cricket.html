@@ -44,7 +44,7 @@
     </button>
     <button
       onclick="
-        let  randomNumberBall = Math.random() * 3;
+        let randomNumberBall = Math.random() * 3;
         let computerChoiceBall;
         if (randomNumberBall > 0 && randomNumberBall <= 1) {
           computerChoiceBall = 'Bat';
@@ -70,6 +70,33 @@
     >
       Ball
     </button>
-    <button>Stump</button>
+    <button
+      onclick="
+         randomNumberBall = Math.random() * 3;
+         let computerChoiceStump;
+        if (randomNumberBall > 0 && randomNumberBall <= 1) {
+          computerChoiceStump = 'Bat';
+        } else if (randomNumberBall > 1 && randomNumberBall <= 2) {
+          computerChoiceStump = 'Ball';
+        } else {
+          computerChoiceStump = 'Stump';
+        }
+
+        //  result;
+        if (computerChoiceStump === 'Stump') {
+          result = 'It\'s a tie';
+        } else if (computerChoiceStump === 'Bat') {
+          result = 'User Won';
+        } else if (computerChoiceStump === 'Ball') {
+          result = 'Computer Won';
+        }
+
+        alert(
+          `your choice is stump.  computer choice is ${computerChoiceStump} and ${result}`,
+        );
+      "
+    >
+      Stump
+    </button>
   </body>
 </html>
