@@ -34,27 +34,19 @@
     </button>
     <button
       onclick="
-        let randomNumberBall = Math.random() * 3;
-        let computerChoiceBall;
-        if (randomNumberBall > 0 && randomNumberBall <= 1) {
-          computerChoiceBall = 'Bat';
-        } else if (randomNumberBall > 1 && randomNumberBall <= 2) {
-          computerChoiceBall = 'Ball';
-        } else {
-          computerChoiceBall = 'Stump';
-        }
+        generateComputerChoice();
 
         //  result;
-        if (computerChoiceBall === 'Ball') {
+        if (computerChoice === 'Ball') {
           result = 'It\'s a tie';
-        } else if (computerChoiceBall === 'Bat') {
+        } else if (computerChoice === 'Bat') {
           result = 'Computer Won';
-        } else if (computerChoiceBall === 'Stump') {
+        } else if (computerChoice === 'Stump') {
           result = 'User Won';
         }
 
         alert(
-          `your choice is Ball.  computer choice is ${computerChoiceBall} and ${result}`,
+          `your choice is Ball.  computer choice is ${computerChoice} and ${result}`,
         );
       "
     >
@@ -62,27 +54,19 @@
     </button>
     <button
       onclick="
-        randomNumberBall = Math.random() * 3;
-        let computerChoiceStump;
-        if (randomNumberBall > 0 && randomNumberBall <= 1) {
-          computerChoiceStump = 'Bat';
-        } else if (randomNumberBall > 1 && randomNumberBall <= 2) {
-          computerChoiceStump = 'Ball';
-        } else {
-          computerChoiceStump = 'Stump';
-        }
+        generateComputerChoice();
 
         //  result;
-        if (computerChoiceStump === 'Stump') {
+        if (computerChoice === 'Stump') {
           result = 'It\'s a tie';
-        } else if (computerChoiceStump === 'Bat') {
+        } else if (computerChoice === 'Bat') {
           result = 'User Won';
-        } else if (computerChoiceStump === 'Ball') {
+        } else if (computerChoice === 'Ball') {
           result = 'Computer Won';
         }
 
         alert(
-          `your choice is stump.  computer choice is ${computerChoiceStump} and ${result}`,
+          `your choice is stump.  computer choice is ${computerChoice} and ${result}`,
         );
       "
     >
