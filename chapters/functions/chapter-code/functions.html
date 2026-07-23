@@ -8,15 +8,24 @@
 <body>
 
     <script>
-        let age = 22;
-        function printAge(){
-            console.log(`your age is ${age}`);
+        // let age = 22;
+        // function printAge(){
+        //     console.log(`your age is ${age}`);
+        // }
+        // printAge();
+        // age = 44;
+        // printAge();
+        // age = 2;
+        // printAge();
+
+        //fucntion with return value
+
+        function generateRandomMove() {
+            let random = Math.random();
+            let randomMove = random * 3;
+            return randomMove;
         }
-        printAge();
-        age = 44;
-        printAge();
-        age = 2;
-        printAge();
+        console.log(generateRandomMove());
     </script>
     
 </body>
