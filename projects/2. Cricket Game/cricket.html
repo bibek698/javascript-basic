@@ -15,17 +15,7 @@
     <h1>Bat Ball Stump Game</h1>
     <button
       onclick="
-        //This generates randome number between 1 to 3
-        let randomNumber = Math.random() * 3;
-        let computerChoice;
-        if (randomNumber > 0 && randomNumber <= 1) {
-          computerChoice = 'Bat';
-        } else if (randomNumber > 1 && randomNumber <= 2) {
-          computerChoice = 'Ball';
-        } else {
-          computerChoice = 'Stump';
-        }
-
+        generateComputerChoice();
         let result;
         if (computerChoice === 'Ball') {
           result = 'User Won';
@@ -72,8 +62,8 @@
     </button>
     <button
       onclick="
-         randomNumberBall = Math.random() * 3;
-         let computerChoiceStump;
+        randomNumberBall = Math.random() * 3;
+        let computerChoiceStump;
         if (randomNumberBall > 0 && randomNumberBall <= 1) {
           computerChoiceStump = 'Bat';
         } else if (randomNumberBall > 1 && randomNumberBall <= 2) {
@@ -98,5 +88,21 @@
     >
       Stump
     </button>
+
+    <script>
+      let computerChoice;
+      function generateComputerChoice() {
+        //This generates randome number between 1 to 3
+        let randomNumber = Math.random() * 3;
+
+        if (randomNumber > 0 && randomNumber <= 1) {
+          computerChoice = "Bat";
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          computerChoice = "Ball";
+        } else {
+          computerChoice = "Stump";
+        }
+      }
+    </script>
   </body>
 </html>
