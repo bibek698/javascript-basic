@@ -16,6 +16,7 @@
     <button
       onclick="
         let computerChoice = generateComputerChoice();
+        result = getResult('Bat', computerChoice);
 
         alert(
           `your choice is Bat.  computer choice is ${computerChoice} and ${result}`,
@@ -28,14 +29,7 @@
       onclick="
         computerChoice = generateComputerChoice();
 
-        //  result;
-        if (computerChoice === 'Ball') {
-          result = 'It\'s a tie';
-        } else if (computerChoice === 'Bat') {
-          result = 'Computer Won';
-        } else if (computerChoice === 'Stump') {
-          result = 'User Won';
-        }
+        result = getResult('Ball', computerChoice);
 
         alert(
           `your choice is Ball.  computer choice is ${computerChoice} and ${result}`,
@@ -48,14 +42,7 @@
       onclick="
         computerChoice = generateComputerChoice();
 
-        //  result;
-        if (computerChoice === 'Stump') {
-          result = 'It\'s a tie';
-        } else if (computerChoice === 'Bat') {
-          result = 'User Won';
-        } else if (computerChoice === 'Ball') {
-          result = 'Computer Won';
-        }
+        result = getResult('Stump', computerChoice);
 
         alert(
           `your choice is stump.  computer choice is ${computerChoice} and ${result}`,
@@ -99,11 +86,11 @@
           }
         } else {
           if (computerMove === 'Stump') {
-          result = 'It\'s a tie';
+          return 'It\'s a tie';
         } else if (computerMove === 'Bat') {
-          result = 'User Won';
+          return 'User Won';
         } else if (computerMove === 'Ball') {
-          result = 'Computer Won';
+          return 'Computer Won';
         }
 
         }
