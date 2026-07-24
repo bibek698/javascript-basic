@@ -81,13 +81,40 @@
       }
 
       function getResult(userMove, computerMove) {
-        if (computerMove === userMove) {
-          return "It's a tie";
-        } else if (computerMove === "Bat" && userMove === "Ball") {
-          return "Computer Won";
-        } else if (computerMove === "Ball" && userMove === "Bat") {
-          return "User Won";
+        if (userMove === "Bat") {
+          if (computerMove === "Ball") {
+            return "User won";
+          } else if (computerMove === "Bat") {
+            return `It's a tie`;
+          } else if (computerMove === "Stump") {
+            return "Coputer won";
+          }
+        } else if (userMove === "Ball") {
+          if (computerMove === "Ball") {
+            return `It's a tie`;
+          } else if (computerMove === "Bat") {
+            return "Coputer won";
+          } else if (computerMove === "Stump") {
+            return "User won";
+          }
+        } else {
+          if (computerMove === 'Stump') {
+          result = 'It\'s a tie';
+        } else if (computerMove === 'Bat') {
+          result = 'User Won';
+        } else if (computerMove === 'Ball') {
+          result = 'Computer Won';
         }
+
+        }
+
+        // if (computerMove === userMove) {
+        //   return "It's a tie";
+        // } else if (computerMove === "Bat" && userMove === "Ball") {
+        //   return "Computer Won";
+        // } else if (computerMove === "Ball" && userMove === "Bat") {
+        //   return "User Won";
+        // }
       }
     </script>
   </body>
