@@ -16,11 +16,9 @@
     <button
       onclick="
         let computerChoice = generateComputerChoice();
-        result = getResult('Bat', computerChoice);
+         let result = getResult('Bat', computerChoice);
 
-        alert(
-          `your choice is Bat.  computer choice is ${computerChoice} and ${result}`,
-        );
+        showResult('Bat',computerChoice,result);
       "
     >
       Bat
@@ -31,9 +29,7 @@
 
         result = getResult('Ball', computerChoice);
 
-        alert(
-          `your choice is Ball.  computer choice is ${computerChoice} and ${result}`,
-        );
+        showResult('Ball',computerChoice,result);
       "
     >
       Ball
@@ -43,10 +39,9 @@
         computerChoice = generateComputerChoice();
 
         result = getResult('Stump', computerChoice);
+        showResult('Stump',computerChoice,result);
 
-        alert(
-          `your choice is stump.  computer choice is ${computerChoice} and ${result}`,
-        );
+       
       "
     >
       Stump
@@ -102,6 +97,13 @@
         // } else if (computerMove === "Ball" && userMove === "Bat") {
         //   return "User Won";
         // }
+      }
+
+      function showResult (userMove, computerMove, result){
+        alert(
+          `your choice is ${userMove}.  computer choice is ${computerMove} and ${result}`,
+        );
+
       }
     </script>
   </body>
