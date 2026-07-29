@@ -8,17 +8,17 @@
 <body>
     
     <script>
-        let product = {
-            company : 'Mango',
-            item_name: 'T-shirt',
-            price: 950,
-            displayPrice: function(){
-                console.log(`Price of the product is ₹${this.price}`);
+        // let product = {
+        //     company : 'Mango',
+        //     item_name: 'T-shirt',
+        //     price: 950,
+        //     displayPrice: function(){
+        //         console.log(`Price of the product is ₹${this.price}`);
 
-            },
+        //     },
 
-        }
-        product.displayPrice();
+        // }
+        // product.displayPrice();
         // console.log(product);
         // // console.log(product.company);
         // // console.log(product.price);
@@ -30,6 +30,24 @@
 
         // delete product.company;
         //   console.log(product);
+
+        let a = 5;
+        let b = a;
+        console.log(`a=${a}, b=${b}`);
+        a = 10;
+        console.log(`a=${a}, b=${b}`);
+
+        let x = {num: 2};
+        let y = x;
+        console.log(`x=${x.num}, y=${y.num}`);
+        x.num = 4;
+        console.log(`x=${x.num}, y=${y.num}`);
+
+        let p = {pop: 'abc'};
+        
+        let q = {pop: 'abc'};
+        console.log(p == q); //check only reference memory address bcz it is object
+
 
     </script>
     
