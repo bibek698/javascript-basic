@@ -24,10 +24,15 @@
         let newObject = {
             message: 'good job',
             status: 'complete',
+            product: 'apple',
+            isidentical: function(){
+                let product = 'apple';
+            },
         };
         let {message, status} = newObject;
         console.log(message);
         console.log(status);
+        console.log(newObject.product === newObject.isidentical());
     </script>
     
 </body>
