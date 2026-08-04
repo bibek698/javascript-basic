@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let myntraProduct = {
+            company: 'Nike',
+            description: '2-Piece Full Zip Propus Pipin',
+            price: 3499,
+        }
+        console.log(myntraProduct);
+
+        let a = {num: 5};
+        let b = a;
+        console.log(`a=${a.num}, b=${a.num}`);
+        a.num = 10;
+        console.log(`a=${a.num}, b=${a.num}`);
+
+        let newObject = {
+            message: 'good job',
+            status: 'complete',
+            product: 'apple',
+            isidentical: function(){
+                let product = 'apple';
+            },
+        };
+        let {message, status} = newObject;
+        console.log(message);
+        console.log(status);
+        console.log(newObject.product === newObject.isidentical());
+    </script>
+    
+</body>
+</html>
